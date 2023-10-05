@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kanban</title>
+
+</head>
+<body>
+<!--Основной компонент-->
+<div id="app"></div>
+
+<!--форма которая далжна быть модальным окном-->
+<form class="form">
+    <label for="title">Заголовок</label>
+    <input type="text" id="title">
+    <label for="description">Описание</label>
+    <textarea id="description"></textarea>
+    <label for="deadline"></label>
+    <input type="date" id="deadline">
+    <button type="submit">Создать</button>
+</form>
+<!--Условная разметка для доски-->
+<div class="board">
+    <div class="column_1"></div>
+    <div class="column_2"></div>
+    <div class="column_3"></div>
+    <div class="column_4"></div>
+</div>
+</body>
+</html>
